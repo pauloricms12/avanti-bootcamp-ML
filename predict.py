@@ -21,7 +21,7 @@ def predict_image(image_path, class_names):
     return class_names[np.argmax(prediction)]
 
 class_names = sorted(os.listdir('FastFoodClassificationV2/Train'))
-image_path = '/home/paulo/avanti-bootcamp-ML1/avanti-bootcamp-ML/FastFoodClassificationV2/Test/Taco/Taco-Test (14).jpeg'
+image_path = 'FastFoodClassificationV2/Test/Taco/Taco-Test (14).jpeg'
 
 predicted_class = predict_image(image_path, class_names)
 print(f'predict: {predicted_class}')
